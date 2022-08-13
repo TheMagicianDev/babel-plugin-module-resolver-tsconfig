@@ -18,7 +18,8 @@ function getRootDir() {
 }
 
 /**
- * @param {*} config Optional. Allow us to provide any extra config for the plugin. Including overriding root. And alias prop would be merged instead of override
+ * @param {*} config Optional. Allow us to provide any extra config for the plugin. Including extending root (merge array). And alias prop would be merged too.
+ * Any other config if it would exist it will be set directly
  * @returns 'babel-plugin-module-resolver' config set to follow typescript tsconfig alias input (baseUrl & paths)
  */
 function setModuleResolverPluginForTsConfig(config = {}) {
@@ -36,13 +37,34 @@ function setModuleResolverPluginForTsConfig(config = {}) {
   const tsconfigContent = fs.readFileSync(tsconfigPath, { encoding: 'utf8'})
   const tsconfig = json5.parse(tsconfigContent)
 
+  let rootExtra = restConfig.root || []
+  if (!Array.isArray(restConfig.root)) {
+    rootExtra = [rootExtra]
+  }
+
+  const convertedTsconfigPaths = Object.entries(tsconfig.compilerOptions.paths).reduce((aliases, [alias, aliasMap]) => {
+    if (typeof aliasMap === 'string') {
+      aliases[alias] = aliasMap
+      return aliases
+    }
+
+    if (Array.isArray(aliasMap)) {
+      if (aliasMap.length === 1) {
+        aliases[alias] = aliasMap[0]
+        return aliases
+      }
+
+      throw new Error('Use one mapping for each alias (tsconfig.json>compilerOptions.paths). Array of length 1.')
+    } 
+  }, {})
+
   return [
     require.resolve('babel-plugin-module-resolver'),
     {
-      root: tsconfig.compilerOptions.baseUrl,
+      root: [tsconfig.compilerOptions.baseUrl, ...rootExtra],
       ...restConfig,
       alias: {
-        ...tsconfig.compilerOptions.paths,
+        ...convertedTsconfigPaths,
         ...restConfig.alias
       },
     }
