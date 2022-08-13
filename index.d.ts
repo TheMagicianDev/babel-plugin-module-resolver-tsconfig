@@ -7,5 +7,5 @@ declare interface IPluginConfig {
 }
 
 declare function setModuleResolverPluginForTsConfig(
-  config: IPluginConfig
+  config?: IPluginConfig
 ): [PluginTarget, IPluginConfig];
