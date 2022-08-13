@@ -20,5 +20,8 @@
   "types": "./index.d.ts",
   "devDependencies": {
     "@types/babel__core": "^7.1.19"
+  },
+  "dependencies": {
+    "json5": "^2.2.1"
   }
 }

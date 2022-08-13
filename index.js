@@ -1,4 +1,6 @@
 const path = require('path')
+const fs = require('fs')
+const json5 = require('json5')
 
 const PWD = process.env.PWD || process.cwd();
 
@@ -26,7 +28,13 @@ function setModuleResolverPluginForTsConfig(config = {}) {
   } = config
 
   tsconfigPath = tsconfigPath || path.join(getRootDir(), 'tsconfig.json')
-  const tsconfig = require(tsconfigPath)
+
+  if (!fs.existsSync(tsconfigPath)) {
+    throw new Error(tsconfigPath + ' does\'t exist!');
+  }
+
+  const tsconfigContent = fs.readFileSync(tsconfigPath)
+  const tsconfig = json5.parse(tsconfigContent)
 
   return [
     require.resolve('babel-plugin-module-resolver'),
