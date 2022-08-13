@@ -4,7 +4,7 @@ You should **"Write the aliases in tsconfig only\"**.
 
 A helper module that provide easy configuration of `babel-plugin-module-resolver` plugin for typescript projects. **To avoid repeating writing the aliases in both tsconfig and .babelrc.js.**
 
-And that by reading automatically the config from the tsconfig.json and set the babel module resolver plugin with that automatically. Support extending the config as well.",
+And that by reading automatically the config from the tsconfig.json and set the babel module resolver plugin with that. Support extending the config as well.",
 
 # Examples
 
