@@ -1,4 +1,4 @@
-# BABEL-PLUGIN-MODULE-RESOLVER-TSCONFIG
+# babel-plugin-module-resolver-tsconfig
 
 You should **"Write the aliases in tsconfig only\"**.
 

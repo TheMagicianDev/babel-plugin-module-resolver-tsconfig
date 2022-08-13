@@ -7,13 +7,13 @@
     "url": "git@github.com:MohamedLamineAllal/babel-plugin-mmodule-resolver-tsconfig.git"
   },
   "keywords": [
-    "[\"babel-plugin-module-resolver\"",
-    "\"helper\"",
-    "\"tsconfig\"",
-    "\"write\"",
-    "\"aliases\"",
-    "\"once\"",
-    "\"typescript\"]"
+    "babel-plugin-module-resolver",
+    "helper",
+    "tsconfig",
+    "write",
+    "aliases",
+    "once",
+    "typescript"
   ],
   "author": "Mohamed Lamine Allal <allalmohamedlamine@gmail.com>",
   "license": "MIT",
