@@ -33,7 +33,7 @@ function setModuleResolverPluginForTsConfig(config = {}) {
     throw new Error(tsconfigPath + ' does\'t exist!');
   }
 
-  const tsconfigContent = fs.readFileSync(tsconfigPath)
+  const tsconfigContent = fs.readFileSync(tsconfigPath, { encoding: 'utf8'})
   const tsconfig = json5.parse(tsconfigContent)
 
   return [
