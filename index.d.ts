@@ -1,9 +1,10 @@
 import type { PluginTarget } from '@babel/core';
 
 declare interface IPluginConfig {
-  [configProp: string]: any;
-  root: string;
-  alias: Record<string, string>;
+  [configProp?: string]: any;
+  root?: string;
+  alias?: Record<string, string>;
+  tsconfigPath?: string;
 }
 
 declare function setModuleResolverPluginForTsConfig(
