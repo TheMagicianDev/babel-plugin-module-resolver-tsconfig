@@ -37,11 +37,27 @@ function setModuleResolverPluginForTsConfig(config = {}) {
   const tsconfigContent = fs.readFileSync(tsconfigPath, { encoding: 'utf8'})
   const tsconfig = json5.parse(tsconfigContent)
 
+  const pluginConfig = {}
+
+  // handle root config
   let rootExtra = restConfig.root || []
   if (!Array.isArray(restConfig.root)) {
     rootExtra = [rootExtra]
   }
 
+  let root = []
+  if (tsconfig.baseUrl) {
+    root.push(tsconfig.baseUrl)
+  }
+  if (rootExtra.length) {
+    root = [...root, ...rootExtra]
+  }
+
+  if (root.length) {
+    pluginConfig.root = root
+  }
+
+  // handle alias config
   const convertedTsconfigPaths = Object.entries(tsconfig.compilerOptions.paths).reduce((aliases, [alias, aliasMap]) => {
     if (typeof aliasMap === 'string') {
       aliases[alias] = aliasMap
@@ -58,15 +74,16 @@ function setModuleResolverPluginForTsConfig(config = {}) {
     } 
   }, {})
 
+  config.alias = {
+    ...convertedTsconfigPaths,
+    ...restConfig.alias
+  }
+
   return [
     require.resolve('babel-plugin-module-resolver'),
     {
-      root: [tsconfig.compilerOptions.baseUrl, ...rootExtra],
       ...restConfig,
-      alias: {
-        ...convertedTsconfigPaths,
-        ...restConfig.alias
-      },
+      ...pluginConfig
     }
   ]
 }
