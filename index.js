@@ -46,8 +46,8 @@ function setModuleResolverPluginForTsConfig(config = {}) {
   }
 
   let root = []
-  if (tsconfig.baseUrl) {
-    root.push(tsconfig.baseUrl)
+  if (tsconfig.compilerOptions.baseUrl) {
+    root.push(tsconfig.compilerOptions.baseUrl)
   }
   if (rootExtra.length) {
     root = [...root, ...rootExtra]
