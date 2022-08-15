@@ -41,7 +41,7 @@ function setModuleResolverPluginForTsConfig(config = {}) {
 
   // handle root config
   let rootExtra = restConfig.root || []
-  if (!Array.isArray(restConfig.root)) {
+  if (!Array.isArray(rootExtra)) {
     rootExtra = [rootExtra]
   }
 
@@ -74,7 +74,7 @@ function setModuleResolverPluginForTsConfig(config = {}) {
     } 
   }, {})
 
-  config.alias = {
+  pluginConfig.alias = {
     ...convertedTsconfigPaths,
     ...restConfig.alias
   }
