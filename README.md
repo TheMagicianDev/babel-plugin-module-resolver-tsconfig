@@ -19,7 +19,10 @@
 
 <div align="center">
   <a href="https://www.npmjs.com/package/babel-plugin-module-resolver-tsconfig">npm page</a>, 
-  <a href="https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig">repo page</a>
+  <a href="https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig">repo page</a>,
+  <a href="https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig" style="color: yellow; text-decoration: inherit;">Star me ⭐💫</a>,
+
+  
 </div>
 
 <hr>
@@ -75,6 +78,10 @@ declare function readAndParseTsConfig(tsconfigPath: string): ParsedTsconfig;
 If you like to know the details. Go to the end of the document.
 
 Here bellow more examples first. For a quick start.
+
+> Note: check the toubleshooting section. Tips that can avoid you trouble.
+
+Main rule: in **tsconfig paths** use `./` for relative paths. (`"./src/*"` instead of `"src/*"`). Go to the Tips section at the end to see more details.
 
 ## Examples
 
@@ -213,3 +220,49 @@ It will resolve to
 }
 ```
 
+## Trouble shooting and tips
+
+Hugely very important. If it's not working. Check your tsconfig paths first.
+
+First tip. Use relative paths with `./`.
+
+**this work** ✅:
+
+```ts
+"paths": {
+  "*": ["./src/*"]
+}
+```
+
+this doesn't ❌:
+
+```ts
+"paths": {
+  "*": ["src/*"]
+}
+```
+
+Ok why doesn't the module handle that for us !! ??? => Well actually because you may refer to a no path name. Like a package. So you have to be precise. And the small rule above is simple and natural.
+
+## REPO SUPPORT ⭐🌟✨💫 🌠
+
+<hr/>
+<div align="center">
+  <a href="https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig">repo page</a>
+</div>
+<hr/>
+
+Any issue. Go to repo.
+
+**WAIT** ... ⭐🌟✨💫 🌠 **YOU HAVEN'T STARED THE REPO YET** ⭐🌟✨💫 🌠
+**TIME TO DO** => At least open the repo. And when you test the module and be ❤️ 💖 **What a blessing** 💖 ❤️ => That's the **calling to star** moment. And remember to always smile.
+
+Know that staring a project is a way to show love, appreciation or a little thank you. Not that those are necessary in life. But life is better with and more vibe-ing and beautiful.
+
+It always means something for any author. Plus it does support the package. The first thing people check before they start using a package is the number of stars.
+
+Star only if you see it's worth staring. I personally always love being reminded. I may easily forget or have that out of my mind. Hence this call to action message (there it's an experiment as well. Life is fascinating.).
+
+Feel free. (Repo => [calling](https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig))
+
+Issues, Questions, Contribution, Feedback. => Repo.
