@@ -261,7 +261,7 @@ Know that staring a project is a way to show love, appreciation or a little than
 
 It always means something for any author. Plus it does support the package. The first thing people check before they start using a package is the number of stars.
 
-Star only if you see it's worth staring. I personally always love being reminded. I may easily forget or have that out of my mind. Hence this call to action message (there it's an experiment as well. Life is fascinating.).
+Star only if you see it's worth staring. I personally always love being reminded. I may easily forget or have that out of my mind. Hence this call to action message (there is an experiment as well. Life is fascinating.).
 
 Feel free. (Repo => [calling](https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig))
 
