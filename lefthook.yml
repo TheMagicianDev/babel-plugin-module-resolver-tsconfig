@@ -2,7 +2,7 @@ pre-commit:
   parallel: true
   commands:
     lint-src:
-      glob: '{src/**/*.js, test/**/*.test.js}'
+      glob: '{lib/**/*.js, test/**/*.test.js}'
       run: npm run lint
     lint-all:
       glob: '{.eslintrc.json, .prettierrc, lefthook.yml, package.json}'

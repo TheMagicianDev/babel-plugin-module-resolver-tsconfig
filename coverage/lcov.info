@@ -1,5 +1,5 @@
 TN:
-SF:src/index.js
+SF:lib/index.js
 FN:7,last
 FN:11,resolveDirPath
 FN:18,getRootDir

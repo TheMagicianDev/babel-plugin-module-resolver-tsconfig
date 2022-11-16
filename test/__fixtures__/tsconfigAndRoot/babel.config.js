@@ -1,11 +1,12 @@
-const { setModuleResolverPluginForTsConfig } = require('../../../src/index')
+const { setModuleResolverPluginForTsConfig } = require('../../../lib/index');
 
 module.exports = {
-  presets: [
-    "@babel/preset-env",
-    "@babel/preset-typescript"
-  ],
+  presets: ['@babel/preset-env', '@babel/preset-typescript'],
   plugins: [
-    "@babel/plugin-transform-runtime", setModuleResolverPluginForTsConfig({ tsconfigPath: './tsconfig.json', root: './someOther' })
+    '@babel/plugin-transform-runtime',
+    setModuleResolverPluginForTsConfig({
+      tsconfigPath: './tsconfig.json',
+      root: './someOther'
+    })
   ]
-}
+};
