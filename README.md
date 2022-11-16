@@ -6,11 +6,11 @@
   <a href="https://www.npmjs.org/package/babel-plugin-module-resolver-tsconfig" alt="npm version">
     <img src="https://img.shields.io/npm/v/babel-plugin-module-resolver-tsconfig.svg?style=flat-square"/>
   </a>
-  <a href="https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig/actions?query=workflow%3ACI+branch%3Amain">
-    <img src="https://img.shields.io/github/workflow/status/TheMagicianDev/babel-plugin-module-resolver-tsconfig/CI/main" alt="Build Status">
+  <a href="https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig/actions?query=workflow%3ACI+branch%3Amaster">
+    <img src="https://img.shields.io/github/workflow/status/TheMagicianDev/babel-plugin-module-resolver-tsconfig/CI/master" alt="Build Status">
   </a>
-  <a href='https://coveralls.io/github/TheMagicianDev/babel-plugin-module-resolver-tsconfig?branch=main'>
-    <img src='https://coveralls.io/repos/github/TheMagicianDev/babel-plugin-module-resolver-tsconfig/badge.svg?branch=main' alt='Coverage Status' />
+  <a href='https://coveralls.io/github/TheMagicianDev/babel-plugin-module-resolver-tsconfig?branch=master'>
+    <img src='https://coveralls.io/repos/github/TheMagicianDev/babel-plugin-module-resolver-tsconfig/badge.svg?branch=master' alt='Coverage Status' />
   </a>
   <a href='LICENSE'>
     <img src='https://img.shields.io/badge/license-MIT-blue.svg?style=flat' alt='Coverage Status' />
