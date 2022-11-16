@@ -20,7 +20,7 @@
 <div align="center">
   <a href="https://www.npmjs.com/package/babel-plugin-module-resolver-tsconfig">npm page</a>, 
   <a href="https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig">repo page</a>,
-  <a href="https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig" style="color: yellow; text-decoration: inherit;">Star me ⭐💫</a>,
+  <a href="https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig" style="color: yellow; text-decoration: inherit;">Star me ⭐💫</a>
 
   
 </div>
