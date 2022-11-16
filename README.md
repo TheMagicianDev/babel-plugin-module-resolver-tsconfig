@@ -1,6 +1,6 @@
 # babel-plugin-module-resolver-tsconfig
 
-![babel plugin module resolver tsconfig automatic alias banner](./imgs/banner_black.svg)
+![babel plugin module resolver tsconfig automatic alias banner](./imgs/banner_black.png)
 
 <div align="center">
   <a href="https://www.npmjs.org/package/babel-plugin-module-resolver-tsconfig" alt="npm version">
@@ -53,7 +53,7 @@ module.export = {
 
 it's that simple. Instead of manually adding and repeating all of the aliases. No more of `it shouldn't be like this` and `frustration`.
 
-`tsconfig.json` locked up automatically in the same directory as `babel.config.json`.
+`tsconfig.json` looked up automatically in the same directory as `babel.config.json`.
 
 ### Signature
 
