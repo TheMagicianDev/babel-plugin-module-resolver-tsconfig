@@ -18,7 +18,7 @@
 </div>
 
 <div align="center">
-  <a href="https://www.npmjs.com/package/swc-command">npm page</a>, 
+  <a href="https://www.npmjs.com/package/babel-plugin-module-resolver-tsconfig">npm page</a>, 
   <a href="https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig">repo page</a>
 </div>
 
