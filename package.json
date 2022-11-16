@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-module-resolver-tsconfig",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "\"Write the aliases only in tsconfig. It should be that simple.\". A helper module that provide easy configuration of babel-plugin-module-resolver plugin for typescript projects. To avoid repeating writing the aliases in both tsconfig and .babelrc.js. And that by reading automatically the config from the tsconfig.json and set the babel module resolver plugin with that. Support extending the config as well.",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
