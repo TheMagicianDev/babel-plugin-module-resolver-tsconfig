@@ -1,6 +1,6 @@
 # babel-plugin-module-resolver-tsconfig
 
-![babel plugin module resolver tsconfig automatic alias banner](./imgs/banner_black.png)
+![babel plugin module resolver tsconfig automatic alias banner](./imgs/banner_black.svg)
 
 <div align="center">
   <a href="https://www.npmjs.org/package/babel-plugin-module-resolver-tsconfig" alt="npm version">
