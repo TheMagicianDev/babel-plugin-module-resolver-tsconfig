@@ -35,6 +35,8 @@ And that by reading automatically the config from the `tsconfig.json` and settin
 
 Support extending the config as well.
 
+Say goodbye to repetition and also the frustration of it's not working. Why => forget to add it to the other config. **No more of that**.
+
 See how simple it becomes.
 
 ## First basic example
