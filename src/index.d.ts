@@ -1,7 +1,7 @@
 import type { PluginTarget } from '@babel/core';
-
-declare interface IPluginConfig {
-  [configProp?: string]: any;
+import type { ParsedTsconfig } from 'typescript';
+export declare interface IPluginConfig {
+  [configProp: string]: any;
   root?: string;
   alias?: Record<string, string>;
   tsconfigPath?: string;
@@ -10,3 +10,5 @@ declare interface IPluginConfig {
 declare function setModuleResolverPluginForTsConfig(
   config?: IPluginConfig
 ): [PluginTarget, IPluginConfig];
+
+declare function readAndParseTsConfig(tsconfigPath: string): ParsedTsconfig;

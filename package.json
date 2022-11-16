@@ -2,7 +2,7 @@
   "name": "babel-plugin-module-resolver-tsconfig",
   "version": "1.0.12",
   "description": "\"Write the aliases only in tsconfig\". A helper module that provide easy configuration of babel-plugin-mmodule-resolver plugin for typescript projects. To avoid repeating writing the aliases in both tsconfig and .babelrc.js. And that by reading automatically the config from the tsconfig.json and set the babel module resolver plugin with that. Support extending the config as well.",
-  "main": "index.js",
+  "main": "src/index.js",
   "repository": {
     "url": "git@github.com:MohamedLamineAllal/babel-plugin-mmodule-resolver-tsconfig.git"
   },
@@ -18,10 +18,26 @@
   "author": "Mohamed Lamine Allal <allalmohamedlamine@gmail.com>",
   "license": "MIT",
   "types": "./index.d.ts",
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
-    "@types/babel__core": "^7.1.19"
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.2",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.18.6",
+    "@babel/runtime": "^7.20.1",
+    "@types/babel__core": "^7.1.19",
+    "@types/jest": "^28.1.7",
+    "@types/node": "^18.11.9",
+    "jest": "^28.1.3",
+    "json-schema-to-typescript": "^11.0.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
   },
   "dependencies": {
+    "babel-plugin-module-resolver": "^4.1.0",
     "json5": "^2.2.1"
   }
 }
