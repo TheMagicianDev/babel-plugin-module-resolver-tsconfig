@@ -27,7 +27,7 @@
 
 <hr>
 
-You should **"Write the aliases in tsconfig only\"**.
+You should **"Write the aliases in tsconfig only. It should be that simple."**.
 
 A helper module that provides easy configuration of [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver) plugin for typescript projects. **To avoid repeating writing the aliases in both tsconfig and .babelrc.js.** (What a blessing)
 
