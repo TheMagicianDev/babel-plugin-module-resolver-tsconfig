@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@fonts": ["./src/fonts/index.ts"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*": ["./src/utils/*", "./src/utils2/*"]
     },
     "outDir": "dist",
   }
