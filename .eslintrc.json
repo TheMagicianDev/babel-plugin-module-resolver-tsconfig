@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:prettier/recommended",
+    "airbnb-base"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "quotes": [
+      "error",
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": false }
+    ],
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "comma-dangle": "off",
+    "no-underscore-dangle": "off",
+    "no-prototype-builtins": "off",
+    "object-curly-newline":"off",
+    "operator-linebreak": "off",
+    "implicit-arrow-linebreak": "off",
+    "function-paren-newline": "off",
+    "import/extensions": "off",
+    "no-plusplus": "off",
+    "no-async-promise-executor": "off"
+  }
+}
