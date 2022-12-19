@@ -257,9 +257,9 @@ Ok why doesn't the module handle that for us !! ??? => Well actually because you
 Any issue. Go to repo.
 
 **WAIT** ... ⭐🌟✨💫 🌠 **YOU HAVEN'T STARED THE REPO YET** ⭐🌟✨💫 🌠
-**TIME TO DO** => At least open the repo. And when you test the module and be ❤️ 💖 **What a blessing** 💖 ❤️ => That's the **calling to star** moment. And remember to always smile.
+**[TIME TO DO](https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig)** => At least [open the repo](https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig). And when you test the module and be ❤️ 💖 **What a blessing** 💖 ❤️ => That's the **[calling to star](https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig)** moment. And remember to always smile.
 
-Like it => Star => Let know - community picked it. => trust (barrier to use)
+Like it => [Star](https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig) => Let know - community picked it. => trust (barrier to use)
 
 Feel free. (Repo => [calling](https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig))
 
