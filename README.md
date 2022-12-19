@@ -3,11 +3,11 @@
 ![babel plugin module resolver tsconfig automatic alias banner](./imgs/banner_black.png)
 
 <div align="center">
-  <a href="https://www.npmjs.org/package/babel-plugin-module-resolver-tsconfig" alt="npm version">
-    <img src="https://img.shields.io/npm/v/babel-plugin-module-resolver-tsconfig.svg?style=flat-square"/>
+  <a href="https://www.npmjs.org/package/babel-plugin-module-resolver-tsconfig">
+    <img src="https://img.shields.io/npm/v/babel-plugin-module-resolver-tsconfig.svg?style=flat-square" alt="npm version"/>
   </a>
   <a href="https://github.com/TheMagicianDev/babel-plugin-module-resolver-tsconfig/actions?query=workflow%3ACI+branch%3Amaster">
-    <img src="https://img.shields.io/github/workflow/status/TheMagicianDev/babel-plugin-module-resolver-tsconfig/CI/master" alt="Build Status">
+    <img src="https://img.shields.io/github/actions/workflow/status/TheMagicianDev/babel-plugin-module-resolver-tsconfig/ci.yml?branch=master" alt="Build Status">
   </a>
   <a href='https://coveralls.io/github/TheMagicianDev/babel-plugin-module-resolver-tsconfig?branch=master'>
     <img src='https://coveralls.io/repos/github/TheMagicianDev/babel-plugin-module-resolver-tsconfig/badge.svg?branch=master' alt='Coverage Status' />
@@ -267,6 +267,27 @@ Issues, Questions, Contribution, Feedback. => Repo.
 
 ## The Magician project
 
-This plugin was created as a need first and also part of the teaching at the magician project. The Magician Dev. (The Magician project is about magic for life [in everything], The Magician Dev is about development)
+This plugin was created as a need first and also part of the teaching series at the magician project. The Magician Dev. (The Magician project is about magic for life [in everything], The Magician Dev is about development)
 
-[content will be shared later]
+This repo for instance does show
+> how to setup a package building project, eslint with prettier, commintlint with lefthook, Setting up CI (github actions), tests, and coverage and documentation badges.
+
+And beginner topics:
+> json5, regex, paths, fs, root directory for npm dev tools, calling parent, js + dts ....
+
+
+More details about those topics in:
+
+[Related content will be shared soon]
+
+Check:
+
+[Coming soon]
+
+Follow us at:
+
+[Coming soon]
+
+Support The Magician Project:
+
+[Coming later]
